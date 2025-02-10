@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url(img/photo04.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .wrapper {
+        width: 420px;
+        background: transparent;
+        border: 2px solid rgb(6, 7, 8);
+        backdrop-filter: blur(10px);
+        color: #030303;
+        border-radius: 12px;
+        padding: 30px 40px;
+      }
+      .wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+      .bglogo {
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: -20px;
+      }
+      .wrapper .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+
+        margin: 30px 0;
+      }
+      .wrapper img {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        top: -10px;
+      }
+      .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgb(17, 16, 16);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #020202df;
+        padding: 20px 45px 20px 20px;
+      }
+      .input-box input::placeholder {
+        color: #5f4e4e;
+      }
+      .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        transform: translate(-50%);
+        font-size: 20px;
+      }
+      .wrapper .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+      }
+      .remember-forgot label input {
+        accent-color: #492bc1;
+        margin-right: 3px;
+      }
+      .remember-forgot a {
+        color: #17bfdc;
+        text-decoration: none;
+      }
+      .remember-forgot a :hover {
+        text-decoration: underline;
+      }
+      .wrapper .btn {
+        width: 100%;
+        height: 45px;
+        background: #0d0d0e;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #e2dfdf;
+        font-weight: 600;
+      }
+      .wrapper .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+      }
+      .register-link p a {
+        color: #824444;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .register-link p a:hover {
+        text-decoration: underline;
+      }
+      .input-box {
+        border-radius: 100%;
+      }
+      .btn {
+        border: 1px solid #050505;
+      }
+      button {
+        background-color: rgb(194, 181, 176);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bglogo input-box">
+        <img src="img/newlogu.png" alt="" />
+      </div>
+      <form action="lobby.html">
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remember Me</label>
+          <a href="forgot.html">Forgot Password</a>
+          <a href="resistation.html"></a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p>Don't have an account? <button>Sign Up</button></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
